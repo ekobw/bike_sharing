@@ -6,7 +6,7 @@ import streamlit as st
 from babel.numbers import format_currency
 sns.set(style='dark')
 
-hour_df = pd.read_csv("all_hour.csv")
+hour_df = pd.read_csv("https://raw.githubusercontent.com/ekobw/bike_sharing/main/dashboard/all_hour.csv")
 
 st.header('Bike Sharing Data Analysis Project :bike:')
 
