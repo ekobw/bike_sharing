@@ -8,6 +8,11 @@ sns.set(style='dark')
 
 hour_df = pd.read_csv("all_hour.csv")
 
+st.header('Bike Sharing Data Analysis Project :bike:')
+
+
+st.subheader('Average Rental Bikes per Day')
+
 average_rental_bike = hour_df.groupby('weekday')['cnt'].mean().sort_values(ascending=False)
 average_rental_bike_list = average_rental_bike.index.tolist()
 
@@ -18,6 +23,9 @@ ax.set_title('Average Rental Bikes per Day')
 ax.set_xlabel('Rental Bikes')
 ax.set_ylabel('Day')
 st.pyplot(plt)
+
+
+st.subheader('Rental Bikes per Season per Year')
 
 season_per_year = pd.pivot_table(hour_df, values='cnt', index='season', columns='yr', aggfunc='sum')
 season_per_year = season_per_year.reset_index()
