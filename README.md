@@ -9,3 +9,12 @@ pip install numpy pandas scipy matplotlib seaborn jupyter streamlit babel
 ```
 streamlit run dashboard.py
 ```
+
+## Dashboard URL
+
+https://bike-sharing-project.streamlit.app/
+
+
+## Dashboard Screenshot
+
+![Dashboard Streamlit](https://i.ibb.co/3ss0VzR/dashboard-streamlit.jpg)
