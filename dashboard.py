@@ -41,4 +41,4 @@ ax.set_title("Rental Bikes per Season per Year")
 ax.legend(title='Year')
 st.pyplot(plt)
 
-st.caption('Copyright (c) 2023 by: https://github.com/ekobw')
+st.caption('Copyright :copyright: 2023 by Eko B.W.: https://www.linkedin.com/in/eko-bw/')
